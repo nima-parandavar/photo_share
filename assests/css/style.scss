@@ -1,22 +1,31 @@
-a{text-decoration: none; color: #000000;}
-li{list-style: none;}
+a {
+    text-decoration: none;
+    color: #000000;
+}
 
-body{
+li {
+    list-style: none;
+}
+
+body {
     font-size: 100%;
     width: 100%;
     font-family: 'Lato', sans-serif;
 }
-nav{
+
+nav {
     display: flex;
     flex-direction: column;
-    background-color: transparent;
+    background-color: rgba($color: #fff, $alpha: 0.5);
     position: sticky;
     left: 0;
     top: 0;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
     transition: top 0.3s ease-in-out;
+    z-index: 999;
 }
-.navigation{
+
+.navigation {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -25,33 +34,39 @@ nav{
     align-items: center;
     padding: 10px 15px;
 }
-#logo{
+
+#logo {
     font-family: 'Pacifico', cursive;
 }
 
-.n-right{
+.n-right {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: transparent;
-    img{
+
+    img {
         width: 40px;
         height: 40px;
         border-radius: 50%;
     }
-    svg{
+
+    svg {
         width: 35px;
         height: 35px;
     }
 }
-.actions{
+
+.actions {
     margin-right: 10px;
     border-radius: 50%;
     transform: rotate(0deg);
-    svg{
+
+    svg {
         width: 25px;
     }
-    &:hover{
+
+    &:hover {
         animation-name: ring;
         animation-duration: 0.3s;
         animation-delay: 0.1s;
@@ -59,20 +74,142 @@ nav{
         animation-direction: reverse;
     }
 }
+
 @keyframes ring {
-    0% {transform: rotate(0deg);}
-    25% {transform: rotate(35deg);}
-    50% {transform: rotate(0deg);}
-    75% {transform: rotate(-35deg);}
-    100% {transform: rotate(0deg);}
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(35deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-35deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
-.categories{
+.categories {
     padding: 10px 15px;
     font-weight: 500;
     overflow-x: scroll;
     overflow-y: hidden;
     scrollbar-width: none;
-    .c-item{margin-right: 15px;}
+
+    .c-item {
+        margin-right: 15px;
+    }
 }
-.active{color: #000000 !important; font-weight: 700;}
+
+.active {
+    color: #000000 !important;
+    font-weight: 700;
+}
+
+// header
+.h-head {
+    font-family: 'Pacifico', cursive;
+}
+
+
+.inspire {
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    overflow-x: hidden;
+    grid-template-columns: repeat(23, 250px);
+    grid-template-rows: 250px;
+    margin: 5rem auto;
+
+    .inspire-item {
+        width: 250px;
+        height: 250px;
+        transform: translateX(0);
+        animation-name: slide;
+        animation-timing-function: linear;
+        animation-duration: 300s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-4100px);
+    }
+}
+
+.r {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+@for $i from 1 through 23 {
+    .r-#{$i} {
+        background-image: url('../images/cover-#{$i}.jpg');
+        filter: brightness(1.0);
+        transition: filter 0.5s ease-in-out;
+
+        &:hover {
+            filter: brightness(0.6);
+        }
+    }
+}
+
+// content
+.content{
+    width: 90%;
+    margin: 0 auto;
+
+}
+.image-card{
+    margin: 20px;
+    position: relative;
+    .like{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .collection{
+        position: absolute;
+        right: 60px;
+        top: 10px;
+    }
+    img{
+        width: 320px;
+        filter: brightness(1.0);
+        transition: filter 0.3s ease-in-out;
+    }
+}
+.owner{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    .avatar{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+        img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+}

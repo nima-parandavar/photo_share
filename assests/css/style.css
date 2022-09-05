@@ -16,14 +16,15 @@ body {
 nav {
   display: flex;
   flex-direction: column;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.5);
   position: -webkit-sticky;
   position: sticky;
   left: 0;
   top: 0;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
   transition: top 0.3s ease-in-out;
+  z-index: 999;
 }
 
 .navigation {
@@ -125,4 +126,307 @@ nav {
 .active {
   color: #000000 !important;
   font-weight: 700;
+}
+
+.h-head {
+  font-family: "Pacifico", cursive;
+}
+
+.inspire {
+  display: grid;
+  justify-content: start;
+  align-items: center;
+  overflow-x: hidden;
+  grid-template-columns: repeat(23, 250px);
+  grid-template-rows: 250px;
+  margin: 5rem auto;
+}
+.inspire .inspire-item {
+  width: 250px;
+  height: 250px;
+  transform: translateX(0);
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-duration: 300s;
+          animation-duration: 300s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-4100px);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-4100px);
+  }
+}
+.r {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.r-1 {
+  background-image: url("../images/cover-1.jpg");
+  filter: brightness(1);
+  transition: filter 0.5s ease-in-out;
+}
+.r-1:hover {
+  filter: brightness(0.6);
+}
+
+.r-2 {
+  background-image: url("../images/cover-2.jpg");
+  filter: brightness(1);
+  transition: filter 0.5s ease-in-out;
+}
+.r-2:hover {
+  filter: brightness(0.6);
+}
+
+.r-3 {
+  background-image: url("../images/cover-3.jpg");
+  filter: brightness(1);
+  transition: filter 0.5s ease-in-out;
+}
+.r-3:hover {
+  filter: brightness(0.6);
+}
+
+.r-4 {
+  background-image: url("../images/cover-4.jpg");
+  filter: brightness(1);
+  transition: filter 0.5s ease-in-out;
+}
+.r-4:hover {
+  filter: brightness(0.6);
+}
+
+.r-5 {
+  background-image: url("../images/cover-5.jpg");
+  filter: brightness(1);
+  transition: filter 0.5s ease-in-out;
+}
+.r-5:hover {
+  filter: brightness(0.6);
+}
+
+.r-6 {
+  background-image: url("../images/cover-6.jpg");
+  filter: brightness(1);
+  transition: filter 0.5s ease-in-out;
+}
+.r-6:hover {
+  filter: brightness(0.6);
+}
+
+.r-7 {
+  background-image: url("../images/cover-7.jpg");
+  filter: brightness(1);
+  transition: filter 0.5s ease-in-out;
+}
+.r-7:hover {
+  filter: brightness(0.6);
+}
+
+.r-8 {
+  background-image: url("../images/cover-8.jpg");
+  filter: brightness(1);
+  transition: filter 0.5s ease-in-out;
+}
+.r-8:hover {
+  filter: brightness(0.6);
+}
+
+.r-9 {
+  background-image: url("../images/cover-9.jpg");
+  filter: brightness(1);
+  transition: filter 0.5s ease-in-out;
+}
+.r-9:hover {
+  filter: brightness(0.6);
+}
+
+.r-10 {
+  background-image: url("../images/cover-10.jpg");
+  filter: brightness(1);
+  transition: filter 0.5s ease-in-out;
+}
+.r-10:hover {
+  filter: brightness(0.6);
+}
+
+.r-11 {
+  background-image: url("../images/cover-11.jpg");
+  filter: brightness(1);
+  transition: filter 0.5s ease-in-out;
+}
+.r-11:hover {
+  filter: brightness(0.6);
+}
+
+.r-12 {
+  background-image: url("../images/cover-12.jpg");
+  filter: brightness(1);
+  transition: filter 0.5s ease-in-out;
+}
+.r-12:hover {
+  filter: brightness(0.6);
+}
+
+.r-13 {
+  background-image: url("../images/cover-13.jpg");
+  filter: brightness(1);
+  transition: filter 0.5s ease-in-out;
+}
+.r-13:hover {
+  filter: brightness(0.6);
+}
+
+.r-14 {
+  background-image: url("../images/cover-14.jpg");
+  filter: brightness(1);
+  transition: filter 0.5s ease-in-out;
+}
+.r-14:hover {
+  filter: brightness(0.6);
+}
+
+.r-15 {
+  background-image: url("../images/cover-15.jpg");
+  filter: brightness(1);
+  transition: filter 0.5s ease-in-out;
+}
+.r-15:hover {
+  filter: brightness(0.6);
+}
+
+.r-16 {
+  background-image: url("../images/cover-16.jpg");
+  filter: brightness(1);
+  transition: filter 0.5s ease-in-out;
+}
+.r-16:hover {
+  filter: brightness(0.6);
+}
+
+.r-17 {
+  background-image: url("../images/cover-17.jpg");
+  filter: brightness(1);
+  transition: filter 0.5s ease-in-out;
+}
+.r-17:hover {
+  filter: brightness(0.6);
+}
+
+.r-18 {
+  background-image: url("../images/cover-18.jpg");
+  filter: brightness(1);
+  transition: filter 0.5s ease-in-out;
+}
+.r-18:hover {
+  filter: brightness(0.6);
+}
+
+.r-19 {
+  background-image: url("../images/cover-19.jpg");
+  filter: brightness(1);
+  transition: filter 0.5s ease-in-out;
+}
+.r-19:hover {
+  filter: brightness(0.6);
+}
+
+.r-20 {
+  background-image: url("../images/cover-20.jpg");
+  filter: brightness(1);
+  transition: filter 0.5s ease-in-out;
+}
+.r-20:hover {
+  filter: brightness(0.6);
+}
+
+.r-21 {
+  background-image: url("../images/cover-21.jpg");
+  filter: brightness(1);
+  transition: filter 0.5s ease-in-out;
+}
+.r-21:hover {
+  filter: brightness(0.6);
+}
+
+.r-22 {
+  background-image: url("../images/cover-22.jpg");
+  filter: brightness(1);
+  transition: filter 0.5s ease-in-out;
+}
+.r-22:hover {
+  filter: brightness(0.6);
+}
+
+.r-23 {
+  background-image: url("../images/cover-23.jpg");
+  filter: brightness(1);
+  transition: filter 0.5s ease-in-out;
+}
+.r-23:hover {
+  filter: brightness(0.6);
+}
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.image-card {
+  margin: 20px;
+  position: relative;
+}
+.image-card .like {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.image-card .collection {
+  position: absolute;
+  right: 60px;
+  top: 10px;
+}
+.image-card img {
+  width: 320px;
+  filter: brightness(1);
+  transition: filter 0.3s ease-in-out;
+}
+
+.owner {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+.owner .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.owner .avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */

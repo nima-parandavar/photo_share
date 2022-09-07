@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- vue js 3  CDN -->
-    <script src="https://unpkg.com/vue@3"></script>
+    <!-- <script src="https://unpkg.com/vue@3"></script/> -->
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,6 +38,26 @@
                         <small class="text-danger"><i class="fa-solid fa-xmark me-2"></i>Error message</small>
                     </div>
                 </div>
+                <div class="my-3">
+                    <label for="last_name">Last name</label>
+                    <input type="text" name="last_name" id="last_name">
+                </div>
+                <div class="my-3">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="my-3">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                    <div class="my-2">
+                        <small class="text-muted"><i class="fa-solid fa-info me-2"></i>min 8 char</small>
+                        <br>
+                    </div>
+                </div>
+                <button type="submit" class="btn py-2 btn-dark" style="width: 100%;">Join</button>
+                <p class="text-center my-3 fs-5">OR</p>
+                <button class="btn py-2 btn-danger" style="width: 100%;"><span><i class="fa-brands fa-google"></i></span>
+                    Join using Google</button>
             </form>
         </div>
     </div>

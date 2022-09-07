@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- vue js 3  CDN -->
+    <!-- <script src="https://unpkg.com/vue@3"></script/> -->
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./assests/bootstrap-dist/css/bootstrap.min.css">
+    <!-- style -->
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <link rel="stylesheet" href="./assests/css/form_style.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/9fea9eab69.js" crossorigin="anonymous"></script>
+    <title>Index</title>
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="collection-top"
+        style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), #fff), url('./assests/images/collection.jpg')">
+        <div class="collect-content">
+            <h1 class="displayt-5 mb-3 m-5">Collection name</h1>
+            <a href="#" class="collect-user ms-5">
+                <img src="./assests/images/cover-14.jpg" class="rounded-circle collect-avatar" />
+                <p class="fs-5 mb-0">Alice Tracy</p>
+            </a>
+        </div>
+    </div>
+    <!-- end banner -->
+    <!-- collection content -->
+    <div class="content my-5 d-flex flex-wrap flex-row justify-content-center align-items-center">
+        <!-- loop in images -->
+        <div class="image-card">
+            <img src="./assests/images/cover-2.jpg" />
+            <div class="klsdm">
+                <button class="btn btn-light like">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+                    </svg>
+                </button>
+                <button class="btn btn-light collection">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-plus-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+                    </svg>
+                </button>
+                <div class="owner d-flex flex-row flex-nowrap justify-content-start align-items-center">
+                    <div class="avatar">
+                        <img src="./assests/images/cover-23.jpg" />
+                    </div>
+                    <a href="#">Barbara Brown</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end collection content -->
+    <!-- JSs -->
+    <script src="./assests/bootstrap-dist/js/bootstrap.min.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="./assests/js/js.js"></script>
+</body>
+
+</html>
